@@ -1,0 +1,750 @@
+{
+  "towers": [
+    {
+      "id": "picket",
+      "name": "Picket Trooper",
+      "cost": 250,
+      "hp": 100,
+      "footprint": 1.2,
+      "tint": [
+        0.45,
+        0.48,
+        0.32
+      ],
+      "base": {
+        "damage": 2,
+        "damage_type": "kinetic",
+        "burst": 3,
+        "burst_gap": 0.12,
+        "reload": 1.5,
+        "range": 10,
+        "air": false,
+        "stealth": false,
+        "splash": 0,
+        "pierce": 1,
+        "chains": 0,
+        "role": "attack"
+      },
+      "top": [
+        {
+          "name": "Scope Rail",
+          "cost": 150,
+          "delta": {
+            "range": 3
+          }
+        },
+        {
+          "name": "Drill Sergeant",
+          "cost": 350,
+          "delta": {
+            "damage": 1,
+            "reload": -0.2
+          }
+        },
+        {
+          "name": "Thermal Visor",
+          "cost": 800,
+          "delta": {
+            "burst": 2,
+            "reload": -0.3
+          },
+          "flags": [
+            "stealth"
+          ]
+        },
+        {
+          "name": "Heavy Rounds",
+          "cost": 2200,
+          "delta": {
+            "damage": 5,
+            "range": 2
+          }
+        },
+        {
+          "name": "Squad Automatic",
+          "cost": 7000,
+          "delta": {
+            "damage": 6,
+            "range": 3
+          },
+          "set": {
+            "fire_mode": "auto",
+            "auto_interval": 0.15
+          }
+        }
+      ],
+      "bottom": [
+        {
+          "name": "Hardened Tips",
+          "cost": 200,
+          "delta": {
+            "damage": 1.5
+          }
+        },
+        {
+          "name": "Quick Mag",
+          "cost": 400,
+          "delta": {
+            "reload": -0.3,
+            "range": 2
+          }
+        },
+        {
+          "name": "Breacher Kit",
+          "cost": 1200,
+          "delta": {
+            "damage": 2,
+            "burst": 1
+          },
+          "flags": [
+            "ignore_kinetic"
+          ]
+        },
+        {
+          "name": "Frag Pack",
+          "cost": 2000,
+          "delta": {
+            "burst": 2
+          },
+          "ability": {
+            "id": "frag_toss",
+            "level": 1,
+            "damage": 80,
+            "splash": 3,
+            "cooldown": 10,
+            "damage_type": "blast"
+          }
+        },
+        {
+          "name": "Demolition Kit",
+          "cost": 6500,
+          "delta": {
+            "damage": 5,
+            "burst": 1
+          },
+          "flags": [
+            "incendiary"
+          ],
+          "set": {
+            "ability_level": 2
+          },
+          "ability": {
+            "id": "frag_toss",
+            "level": 2,
+            "damage": 140,
+            "splash": 4,
+            "cooldown": 6,
+            "damage_type": "blast"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lobber",
+      "name": "Lobber Team",
+      "cost": 600,
+      "hp": 120,
+      "footprint": 1.5,
+      "tint": [
+        0.5,
+        0.42,
+        0.28
+      ],
+      "base": {
+        "damage": 30,
+        "damage_type": "blast",
+        "burst": 1,
+        "reload": 4.0,
+        "range": 18,
+        "splash": 2.5,
+        "projectile_speed": 20,
+        "rockets": 1,
+        "air": false,
+        "stealth": false,
+        "pierce": 1,
+        "chains": 0,
+        "role": "attack"
+      },
+      "top": [
+        {
+          "name": "Dense Warheads",
+          "cost": 500,
+          "delta": {
+            "damage": 25
+          }
+        },
+        {
+          "name": "Rangefinder",
+          "cost": 250,
+          "delta": {
+            "range": 5
+          }
+        },
+        {
+          "name": "Seeker Optics",
+          "cost": 1500,
+          "delta": {
+            "damage": 25,
+            "reload": -0.5
+          },
+          "flags": [
+            "stealth"
+          ]
+        },
+        {
+          "name": "Skypiercer",
+          "cost": 3000,
+          "delta": {
+            "damage": 60,
+            "range": 6
+          },
+          "flags": [
+            "air"
+          ]
+        },
+        {
+          "name": "Bunker Buster",
+          "cost": 9000,
+          "delta": {
+            "damage": 120,
+            "reload": -1.0
+          },
+          "set": {
+            "primary_multiplier": 1.5
+          }
+        }
+      ],
+      "bottom": [
+        {
+          "name": "Fast Loader",
+          "cost": 200,
+          "delta": {
+            "reload": -1.0
+          }
+        },
+        {
+          "name": "Twin Tubes",
+          "cost": 250,
+          "delta": {
+            "reload": -1.0
+          }
+        },
+        {
+          "name": "Shaped Charge",
+          "cost": 1800,
+          "delta": {
+            "splash": 1.5,
+            "damage": 20
+          },
+          "flags": [
+            "ignore_blast"
+          ]
+        },
+        {
+          "name": "Salvo Rack",
+          "cost": 3200,
+          "set": {
+            "rockets": 3
+          }
+        },
+        {
+          "name": "Rocket Battery",
+          "cost": 10000,
+          "delta": {
+            "damage": -10,
+            "reload": -0.6
+          },
+          "flags": [
+            "stealth"
+          ],
+          "set": {
+            "rockets": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "frostline",
+      "name": "Frostline Engineer",
+      "cost": 300,
+      "hp": 60,
+      "footprint": 1.2,
+      "tint": [
+        0.62,
+        0.72,
+        0.78
+      ],
+      "base": {
+        "damage": 0,
+        "damage_type": "frost",
+        "chill": 6,
+        "targets": 3,
+        "splash": 1.0,
+        "reload": 0.3,
+        "range": 8,
+        "air": false,
+        "stealth": false,
+        "pierce": 1,
+        "chains": 0,
+        "role": "attack"
+      },
+      "top": [
+        {
+          "name": "Colder Coils",
+          "cost": 250,
+          "delta": {
+            "chill": 2
+          }
+        },
+        {
+          "name": "Wide Nozzle",
+          "cost": 250,
+          "delta": {
+            "range": 2.5
+          }
+        },
+        {
+          "name": "Ice Storm",
+          "cost": 1000,
+          "delta": {
+            "damage": 2,
+            "targets": 2,
+            "chill": 3
+          }
+        },
+        {
+          "name": "Shatterpoint",
+          "cost": 2600,
+          "delta": {
+            "targets": 2,
+            "splash": 1
+          },
+          "flags": [
+            "shatterpoint"
+          ]
+        },
+        {
+          "name": "Whiteout",
+          "cost": 7500,
+          "delta": {
+            "chill": 6,
+            "targets": 5,
+            "damage": 4
+          },
+          "flags": [
+            "ignore_frost"
+          ],
+          "set": {
+            "freeze_duration": 2.5
+          }
+        }
+      ],
+      "bottom": [
+        {
+          "name": "Focus Lens",
+          "cost": 400,
+          "delta": {
+            "chill": 4,
+            "targets": -2
+          }
+        },
+        {
+          "name": "Turbo Pump",
+          "cost": 450,
+          "delta": {
+            "reload": -0.05,
+            "range": 2
+          }
+        },
+        {
+          "name": "Lance Core",
+          "cost": 1500,
+          "delta": {
+            "damage": 6
+          },
+          "flags": [
+            "stealth"
+          ]
+        },
+        {
+          "name": "Absolute Zero",
+          "cost": 3000,
+          "delta": {
+            "damage": 6
+          },
+          "flags": [
+            "air"
+          ],
+          "set": {
+            "boss_slow_cap": 0.6,
+            "boss_freeze": 1.0,
+            "boss_freeze_cooldown": 15
+          }
+        },
+        {
+          "name": "Cryo Spike",
+          "cost": 6500,
+          "delta": {
+            "damage": 12
+          },
+          "flags": [
+            "chill_vulnerability"
+          ],
+          "set": {
+            "boss_freeze": 1.5,
+            "boss_freeze_cooldown": 12
+          }
+        }
+      ]
+    },
+    {
+      "id": "arc_mast",
+      "name": "Arc Mast",
+      "cost": 700,
+      "hp": 90,
+      "footprint": 1.4,
+      "tint": [
+        0.35,
+        0.62,
+        0.66
+      ],
+      "base": {
+        "damage": 10,
+        "damage_type": "arc",
+        "chains": 2,
+        "chain_range": 4,
+        "falloff": 0.7,
+        "reload": 1.2,
+        "range": 11,
+        "air": true,
+        "stealth": false,
+        "splash": 0,
+        "pierce": 1,
+        "burst": 1,
+        "role": "attack"
+      },
+      "top": [
+        {
+          "name": "Extra Coil",
+          "cost": 300,
+          "delta": {
+            "chains": 1
+          }
+        },
+        {
+          "name": "Capacitor Bank",
+          "cost": 500,
+          "delta": {
+            "reload": -0.2
+          }
+        },
+        {
+          "name": "Tempest Crown",
+          "cost": 1600,
+          "delta": {
+            "chains": 2,
+            "damage": 6
+          }
+        },
+        {
+          "name": "Overcharger",
+          "cost": 3500,
+          "delta": {
+            "damage": 8
+          },
+          "ability": {
+            "id": "overcharge",
+            "duration": 6,
+            "cooldown": 30,
+            "reload_factor": 0.5
+          }
+        },
+        {
+          "name": "Thunderhead",
+          "cost": 9000,
+          "delta": {
+            "damage": 16,
+            "chains": 3
+          },
+          "set": {
+            "falloff": 0.85,
+            "overcharge_cooldown": 20
+          }
+        }
+      ],
+      "bottom": [
+        {
+          "name": "Narrow Gap",
+          "cost": 350,
+          "delta": {
+            "damage": 6,
+            "chains": -1
+          }
+        },
+        {
+          "name": "Tall Mast",
+          "cost": 600,
+          "delta": {
+            "range": 3
+          }
+        },
+        {
+          "name": "Beam Emitter",
+          "cost": 1800,
+          "delta": {
+            "damage": 14,
+            "chains": -1,
+            "reload": -0.6
+          },
+          "flags": [
+            "stealth"
+          ]
+        },
+        {
+          "name": "Plasma Lance",
+          "cost": 4000,
+          "delta": {
+            "damage": 15
+          }
+        },
+        {
+          "name": "Sunspear",
+          "cost": 10500,
+          "delta": {
+            "damage": 55,
+            "reload": -0.1,
+            "range": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "longshot",
+      "name": "Longshot",
+      "cost": 500,
+      "hp": 80,
+      "footprint": 1.2,
+      "tint": [
+        0.4,
+        0.36,
+        0.28
+      ],
+      "base": {
+        "damage": 25,
+        "damage_type": "kinetic",
+        "reload": 2.5,
+        "range": 26,
+        "air": true,
+        "stealth": false,
+        "pierce": 1,
+        "splash": 0,
+        "chains": 0,
+        "burst": 1,
+        "role": "attack"
+      },
+      "top": [
+        {
+          "name": "Match Ammo",
+          "cost": 250,
+          "delta": {
+            "damage": 10
+          }
+        },
+        {
+          "name": "Night Optics",
+          "cost": 500,
+          "delta": {
+            "range": 4
+          },
+          "flags": [
+            "stealth"
+          ]
+        },
+        {
+          "name": "Anti-Materiel",
+          "cost": 1500,
+          "delta": {
+            "damage": 40,
+            "reload": -0.3
+          }
+        },
+        {
+          "name": "Railbolt",
+          "cost": 3500,
+          "delta": {
+            "damage": 80,
+            "reload": -0.4
+          }
+        },
+        {
+          "name": "Widowmaker Rig",
+          "cost": 9500,
+          "delta": {
+            "damage": 245,
+            "reload": -0.2
+          },
+          "flags": [
+            "ignore_kinetic"
+          ]
+        }
+      ],
+      "bottom": [
+        {
+          "name": "Bolt Polish",
+          "cost": 300,
+          "delta": {
+            "reload": -0.5
+          }
+        },
+        {
+          "name": "AP Core",
+          "cost": 450,
+          "set": {
+            "kinetic_resist_ignore": 0.5
+          }
+        },
+        {
+          "name": "Overpenetrator",
+          "cost": 1600,
+          "delta": {
+            "damage": 15
+          },
+          "flags": [
+            "ignore_kinetic"
+          ],
+          "set": {
+            "pierce": 3
+          }
+        },
+        {
+          "name": "Concussive Rounds",
+          "cost": 3000,
+          "delta": {
+            "damage": 20,
+            "reload": -0.7
+          },
+          "set": {
+            "stun_non_boss": 0.5
+          }
+        },
+        {
+          "name": "Overwatch Team",
+          "cost": 8000,
+          "delta": {
+            "damage": 10,
+            "reload": -0.5,
+            "pierce": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "supply_depot",
+      "name": "Supply Depot",
+      "cost": 400,
+      "hp": 150,
+      "footprint": 2.0,
+      "limit": 6,
+      "tint": [
+        0.55,
+        0.48,
+        0.32
+      ],
+      "base": {
+        "damage": 0,
+        "damage_type": "none",
+        "reload": 0,
+        "range": 0,
+        "payout": 100,
+        "base_heal": 0,
+        "role": "economy",
+        "air": false,
+        "stealth": false
+      },
+      "top": [
+        {
+          "name": "Fast Convoy",
+          "cost": 100,
+          "delta": {
+            "payout": 20
+          }
+        },
+        {
+          "name": "Repair Bay",
+          "cost": 300,
+          "flags": [
+            "repair_bay"
+          ],
+          "set": {
+            "repair_radius": 8,
+            "repair_ratio": 0.15
+          }
+        },
+        {
+          "name": "Med Supplies",
+          "cost": 2500,
+          "delta": {
+            "payout": 150,
+            "base_heal": 5
+          }
+        },
+        {
+          "name": "Strategic Reserve",
+          "cost": 6000,
+          "delta": {
+            "payout": 300,
+            "base_heal": 10
+          }
+        },
+        {
+          "name": "Forward Operating Base",
+          "cost": 12000,
+          "delta": {
+            "payout": 800,
+            "base_heal": 10
+          },
+          "set": {
+            "repair_radius": 12
+          }
+        }
+      ],
+      "bottom": [
+        {
+          "name": "Bigger Crates",
+          "cost": 700,
+          "delta": {
+            "payout": 150
+          }
+        },
+        {
+          "name": "Bulk Orders",
+          "cost": 1200,
+          "delta": {
+            "payout": 250
+          }
+        },
+        {
+          "name": "Priority Freight",
+          "cost": 1800,
+          "delta": {
+            "payout": 350
+          }
+        },
+        {
+          "name": "Double Run",
+          "cost": 3500,
+          "delta": {
+            "payout": 550
+          }
+        },
+        {
+          "name": "Convoy Contract",
+          "cost": 11000,
+          "delta": {
+            "payout": 600
+          }
+        }
+      ]
+    }
+  ]
+}

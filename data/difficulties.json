@@ -1,0 +1,69 @@
+{
+  "default": "sentinel",
+  "modes": [
+    {
+      "id": "recruit",
+      "name": "Recruit",
+      "tagline": "First week on the line.",
+      "rating": 1,
+      "wave_count": 16,
+      "enemy_hp_mult": 0.75,
+      "boss_hp_mult": 0.4,
+      "enemy_speed_mult": 0.9,
+      "start_cash": 1000,
+      "base_hp": 800,
+      "income_mult": 1.0,
+      "sell_ratio": 0.5,
+      "tower_hp_enabled": false,
+      "stealth_from_wave": null
+    },
+    {
+      "id": "sentinel",
+      "name": "Sentinel",
+      "tagline": "Hold the pass.",
+      "rating": 2,
+      "wave_count": 24,
+      "enemy_hp_mult": 1.0,
+      "boss_hp_mult": 1.0,
+      "enemy_speed_mult": 1.0,
+      "start_cash": 800,
+      "base_hp": 500,
+      "income_mult": 1.0,
+      "sell_ratio": 0.5,
+      "tower_hp_enabled": true,
+      "stealth_from_wave": null
+    },
+    {
+      "id": "ironwall",
+      "name": "Ironwall",
+      "tagline": "No one gets through.",
+      "rating": 3,
+      "wave_count": 30,
+      "enemy_hp_mult": 1.25,
+      "boss_hp_mult": 1.75,
+      "enemy_speed_mult": 1.1,
+      "start_cash": 700,
+      "base_hp": 400,
+      "income_mult": 0.9,
+      "sell_ratio": 0.5,
+      "tower_hp_enabled": true,
+      "stealth_from_wave": null
+    },
+    {
+      "id": "overrun",
+      "name": "Overrun",
+      "tagline": "They just keep coming.",
+      "rating": 4,
+      "wave_count": 30,
+      "enemy_hp_mult": 1.5,
+      "boss_hp_mult": 2.5,
+      "enemy_speed_mult": 1.2,
+      "start_cash": 600,
+      "base_hp": 300,
+      "income_mult": 0.8,
+      "sell_ratio": 0.5,
+      "tower_hp_enabled": true,
+      "stealth_from_wave": 20
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "enemies": [
+    {
+      "id": "shambler",
+      "name": "Shambler",
+      "hp": 10,
+      "shield": 0,
+      "speed": 2.8,
+      "resist": {
+        "kinetic": 0,
+        "blast": 0,
+        "arc": 0,
+        "frost": 0
+      },
+      "chill_capacity": 20,
+      "boss": false,
+      "airborne": false,
+      "can_damage_towers": false,
+      "tint": [
+        0.45,
+        0.55,
+        0.32
+      ],
+      "visual_scale": 1.0
+    },
+    {
+      "id": "sprinter",
+      "name": "Sprinter",
+      "hp": 8,
+      "shield": 0,
+      "speed": 6.0,
+      "resist": {
+        "kinetic": 0,
+        "blast": 0,
+        "arc": 0,
+        "frost": 0
+      },
+      "chill_capacity": 15,
+      "boss": false,
+      "airborne": false,
+      "can_damage_towers": false,
+      "tint": [
+        0.55,
+        0.62,
+        0.28
+      ],
+      "visual_scale": 0.85
+    },
+    {
+      "id": "plated_husk",
+      "name": "Plated Husk",
+      "hp": 60,
+      "shield": 20,
+      "speed": 1.8,
+      "resist": {
+        "kinetic": 40,
+        "blast": 0,
+        "arc": 0,
+        "frost": 0
+      },
+      "chill_capacity": 60,
+      "boss": false,
+      "airborne": false,
+      "can_damage_towers": false,
+      "tint": [
+        0.42,
+        0.44,
+        0.4
+      ],
+      "visual_scale": 1.15
+    },
+    {
+      "id": "carrion_swarm",
+      "name": "Carrion Swarm",
+      "hp": 30,
+      "shield": 0,
+      "speed": 3.5,
+      "resist": {
+        "kinetic": 0,
+        "blast": 0,
+        "arc": 0,
+        "frost": 0
+      },
+      "chill_capacity": 25,
+      "boss": false,
+      "airborne": true,
+      "can_damage_towers": false,
+      "tint": [
+        0.28,
+        0.3,
+        0.32
+      ],
+      "visual_scale": 1.0
+    },
+    {
+      "id": "hive_host",
+      "name": "Hive Host",
+      "hp": 150,
+      "shield": 0,
+      "speed": 2.0,
+      "resist": {
+        "kinetic": 0,
+        "blast": 25,
+        "arc": 0,
+        "frost": 0
+      },
+      "chill_capacity": 80,
+      "boss": false,
+      "airborne": false,
+      "can_damage_towers": false,
+      "tint": [
+        0.4,
+        0.55,
+        0.3
+      ],
+      "visual_scale": 1.45,
+      "on_death_spawn": {
+        "enemy": "sprinter",
+        "count": 4
+      }
+    },
+    {
+      "id": "stitcher",
+      "name": "Stitcher",
+      "hp": 120,
+      "shield": 0,
+      "speed": 2.4,
+      "resist": {
+        "kinetic": 0,
+        "blast": 0,
+        "arc": 25,
+        "frost": 50
+      },
+      "chill_capacity": 60,
+      "boss": false,
+      "airborne": false,
+      "can_damage_towers": false,
+      "tint": [
+        0.36,
+        0.58,
+        0.4
+      ],
+      "visual_scale": 1.05,
+      "heal": {
+        "interval": 3,
+        "radius": 6,
+        "ratio": 0.08,
+        "max_per_target": 150
+      }
+    },
+    {
+      "id": "sparkhead",
+      "name": "Sparkhead",
+      "hp": 90,
+      "shield": 0,
+      "speed": 3.0,
+      "resist": {
+        "kinetic": 0,
+        "blast": 30,
+        "arc": 0,
+        "frost": 0
+      },
+      "chill_capacity": 50,
+      "boss": false,
+      "airborne": false,
+      "can_damage_towers": false,
+      "tint": [
+        0.62,
+        0.58,
+        0.28
+      ],
+      "visual_scale": 1.05,
+      "on_death_stun": {
+        "radius": 6,
+        "duration": 2.5
+      }
+    },
+    {
+      "id": "gristle",
+      "name": "Gristle",
+      "hp": 2500,
+      "shield": 500,
+      "speed": 1.6,
+      "resist": {
+        "kinetic": 25,
+        "blast": 25,
+        "arc": 0,
+        "frost": 50
+      },
+      "chill_capacity": 600,
+      "boss": true,
+      "airborne": false,
+      "can_damage_towers": true,
+      "boss_bar": true,
+      "visual_scale": 1.5,
+      "tint": [
+        0.38,
+        0.36,
+        0.3
+      ],
+      "attacks": [
+        {
+          "id": "rubble_throw",
+          "interval": 7,
+          "range": 16,
+          "tower_damage": 40,
+          "target": "closest"
+        }
+      ]
+    },
+    {
+      "id": "mother_blight",
+      "name": "Mother Blight",
+      "hp": 30000,
+      "shield": 10000,
+      "speed": 1.4,
+      "resist": {
+        "kinetic": 25,
+        "blast": 25,
+        "arc": 0,
+        "frost": 50
+      },
+      "chill_capacity": 4000,
+      "boss": true,
+      "airborne": false,
+      "can_damage_towers": true,
+      "boss_bar": true,
+      "stun_immune": true,
+      "visual_scale": 4.0,
+      "tint": [
+        0.32,
+        0.4,
+        0.26
+      ],
+      "frenzy": {
+        "hp_ratio": 0.3,
+        "speed_bonus": 0.25,
+        "bile_interval": 4
+      },
+      "attacks": [
+        {
+          "id": "bile_mortar",
+          "interval": 6,
+          "range": 20,
+          "tower_damage": 60,
+          "target": "most_expensive"
+        },
+        {
+          "id": "quake_stomp",
+          "interval": 12,
+          "range": 8,
+          "stun": 2,
+          "target": "all_towers"
+        },
+        {
+          "id": "brood_call",
+          "interval": 20,
+          "spawn": "shambler",
+          "count": 4
+        }
+      ]
+    }
+  ]
+}

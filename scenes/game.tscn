@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_game"]
+[ext_resource type="Script" path="res://scripts/camera/overhead_camera.gd" id="2_cam"]
+[ext_resource type="Script" path="res://scripts/map/battlefield.gd" id="3_field"]
+[ext_resource type="Script" path="res://scripts/enemies/wave_spawner.gd" id="4_waves"]
+[ext_resource type="Script" path="res://scripts/map/placement_controller.gd" id="5_place"]
+[ext_resource type="Script" path="res://scripts/ui/hud.gd" id="6_hud"]
+
+[node name="Game" type="Node3D"]
+script = ExtResource("1_game")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+
+[node name="Fill" type="DirectionalLight3D" parent="."]
+
+[node name="OverheadCamera" type="Node3D" parent="."]
+script = ExtResource("2_cam")
+
+[node name="Camera3D" type="Camera3D" parent="OverheadCamera"]
+current = true
+fov = 50.0
+near = 0.1
+far = 400.0
+
+[node name="Battlefield" type="Node3D" parent="."]
+script = ExtResource("3_field")
+
+[node name="Towers" type="Node3D" parent="."]
+
+[node name="Enemies" type="Node3D" parent="."]
+
+[node name="WaveSpawner" type="Node" parent="."]
+script = ExtResource("4_waves")
+
+[node name="Placement" type="Node" parent="."]
+script = ExtResource("5_place")
+
+[node name="HUD" type="CanvasLayer" parent="."]
+script = ExtResource("6_hud")
