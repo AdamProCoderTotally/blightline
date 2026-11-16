@@ -1,0 +1,32 @@
+# Godot 4 editor cache and imported assets
+.godot/
+.import/
+
+# Export output and binaries
+build/
+*.exe
+*.pck
+*.zip
+*.dmg
+*.apk
+*.aab
+*.x86_64
+*.arm64
+
+# Export credentials (never commit)
+export_credentials.cfg
+
+# Generated translations
+*.translation
+
+# Mono / .NET (this project is GDScript only)
+.mono/
+data_*/
+mono_crash.*.json
+
+# OS and editor junk
+.DS_Store
+Thumbs.db
+*.tmp
+*~
+*.swp

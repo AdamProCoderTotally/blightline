@@ -1,0 +1,33 @@
+{
+  "title": "BLIGHTLINE",
+  "advisor": "Sgt. Okafor",
+  "faction": "Task Force Halcyon",
+  "enemy_faction": "the Blighted",
+  "cash_per_hp": 1,
+  "wave_bonus_base": 75,
+  "wave_bonus_step": 25,
+  "hp_mult_slope": 0.05,
+  "skip_bonus_per_sec": 0,
+  "tower_regen_ratio": 0.1,
+  "tower_hp_per_tier_ratio": 0.25,
+  "prep_seconds": 20,
+  "group_gap": 2.0,
+  "path_lateral_offset": 0.6,
+  "air_height": 4.0,
+  "default_difficulty": "sentinel",
+  "leak_damage_mode": "remaining_hp_plus_shield",
+  "upgrade_rules": {
+    "soft_cap_trigger_tier": 3,
+    "other_path_cap_tier": 2
+  },
+  "camera": {
+    "min_pitch": 30,
+    "max_pitch": 80,
+    "min_distance": 12,
+    "max_distance": 60,
+    "default_distance": 40,
+    "default_pitch": 55,
+    "pan_speed": 25,
+    "bounds_padding": 5
+  }
+}

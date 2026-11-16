@@ -1,0 +1,33 @@
+name: Godot
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Godot 4.7.2 and Windows export templates
+        run: bash tools/install_godot.sh
+
+      - name: Import the project
+        run: |
+          "$HOME/.local/opt/godot/godot" --headless --path . --import --quit
+
+      - name: Smoke test
+        run: |
+          "$HOME/.local/opt/godot/godot" --headless --path . --rendering-method gl_compatibility res://tools/smoke_test.tscn
+
+      - name: Export Windows
+        run: bash tools/export_windows.sh
+
+      - name: Upload Windows executable
+        uses: actions/upload-artifact@v4
+        with:
+          name: BLIGHTLINE-windows
+          path: build/windows/BLIGHTLINE.exe
+          if-no-files-found: error

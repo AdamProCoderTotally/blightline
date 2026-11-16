@@ -1,0 +1,613 @@
+{
+  "waves": [
+    {
+      "wave": 1,
+      "id": "wave_01",
+      "timer": 45,
+      "radio": "Halcyon, this is Okafor. Blighted coming up Cinder Pass. Put a Picket on that first bend.",
+      "groups": [
+        {
+          "enemy": "shambler",
+          "count": 6,
+          "spacing": 1.5
+        }
+      ]
+    },
+    {
+      "wave": 2,
+      "id": "wave_02",
+      "timer": 45,
+      "radio": "More of the slow ones. Keep the first bend covered.",
+      "groups": [
+        {
+          "enemy": "shambler",
+          "count": 12,
+          "spacing": 1.0
+        }
+      ]
+    },
+    {
+      "wave": 3,
+      "id": "wave_03",
+      "timer": 45,
+      "radio": "Sprinters! They hit the road fast, so cover a long stretch.",
+      "groups": [
+        {
+          "enemy": "sprinter",
+          "count": 8,
+          "spacing": 0.8
+        },
+        {
+          "enemy": "shambler",
+          "count": 8,
+          "spacing": 0.8
+        }
+      ]
+    },
+    {
+      "wave": 4,
+      "id": "wave_04",
+      "timer": 45,
+      "radio": "Another rush. Don't let the fast ones slip the gaps.",
+      "groups": [
+        {
+          "enemy": "sprinter",
+          "count": 14,
+          "spacing": 0.7
+        },
+        {
+          "enemy": "shambler",
+          "count": 10,
+          "spacing": 0.7
+        }
+      ]
+    },
+    {
+      "wave": 5,
+      "id": "wave_05",
+      "timer": 50,
+      "radio": "Those Husks are wearing riot plate. Bullets bounce. Rockets don't.",
+      "groups": [
+        {
+          "enemy": "plated_husk",
+          "count": 4,
+          "spacing": 1.0
+        },
+        {
+          "enemy": "shambler",
+          "count": 12,
+          "spacing": 1.0
+        }
+      ]
+    },
+    {
+      "wave": 6,
+      "id": "wave_06",
+      "timer": 50,
+      "radio": "Plenty more plated ones next wave. Mix up your damage types.",
+      "groups": [
+        {
+          "enemy": "plated_husk",
+          "count": 12,
+          "spacing": 0.9
+        },
+        {
+          "enemy": "sprinter",
+          "count": 10,
+          "spacing": 0.9
+        }
+      ]
+    },
+    {
+      "wave": 7,
+      "id": "wave_07",
+      "timer": 50,
+      "radio": "Birds! Infected birds! Arc Masts and Longshots can swat 'em.",
+      "groups": [
+        {
+          "enemy": "carrion_swarm",
+          "count": 6,
+          "spacing": 0.9
+        },
+        {
+          "enemy": "shambler",
+          "count": 15,
+          "spacing": 0.9
+        }
+      ]
+    },
+    {
+      "wave": 8,
+      "id": "wave_08",
+      "timer": 50,
+      "radio": "Thermals are picking up ghosts. Get stealth detection up before the next wave.",
+      "groups": [
+        {
+          "enemy": "sprinter",
+          "count": 10,
+          "spacing": 0.8,
+          "stealth": true
+        },
+        {
+          "enemy": "plated_husk",
+          "count": 10,
+          "spacing": 0.8
+        }
+      ]
+    },
+    {
+      "wave": 9,
+      "id": "wave_09",
+      "timer": 55,
+      "radio": "Those fat ones split when they pop. Kill the little ones too.",
+      "groups": [
+        {
+          "enemy": "hive_host",
+          "count": 3,
+          "spacing": 1.2
+        },
+        {
+          "enemy": "carrion_swarm",
+          "count": 12,
+          "spacing": 1.2
+        }
+      ]
+    },
+    {
+      "wave": 10,
+      "id": "wave_10",
+      "timer": 90,
+      "radio": "Big fella inbound. Calls him Gristle. He throws rubble at the nearest tower, so give him something cheap to chew on.",
+      "groups": [
+        {
+          "enemy": "plated_husk",
+          "count": 20,
+          "spacing": 0.8
+        },
+        {
+          "enemy": "gristle",
+          "count": 1,
+          "spacing": 0.8
+        }
+      ]
+    },
+    {
+      "wave": 11,
+      "id": "wave_11",
+      "timer": 55,
+      "radio": "Stitchers sew the others back together. Drop them first.",
+      "groups": [
+        {
+          "enemy": "stitcher",
+          "count": 3,
+          "spacing": 0.9
+        },
+        {
+          "enemy": "plated_husk",
+          "count": 15,
+          "spacing": 0.9
+        }
+      ]
+    },
+    {
+      "wave": 12,
+      "id": "wave_12",
+      "timer": 55,
+      "radio": "Sparkheads pop like transformers. Keep your best gear out of the blast.",
+      "groups": [
+        {
+          "enemy": "sprinter",
+          "count": 20,
+          "spacing": 0.7
+        },
+        {
+          "enemy": "sparkhead",
+          "count": 4,
+          "spacing": 0.7
+        }
+      ]
+    },
+    {
+      "wave": 13,
+      "id": "wave_13",
+      "timer": 55,
+      "radio": "Hidden birds and splitters. You need eyes and something that reaches up.",
+      "groups": [
+        {
+          "enemy": "carrion_swarm",
+          "count": 8,
+          "spacing": 0.9,
+          "stealth": true
+        },
+        {
+          "enemy": "hive_host",
+          "count": 6,
+          "spacing": 0.9
+        }
+      ]
+    },
+    {
+      "wave": 14,
+      "id": "wave_14",
+      "timer": 60,
+      "radio": "Camouflage on the shamblers. Don't trust an empty stretch of road.",
+      "groups": [
+        {
+          "enemy": "shambler",
+          "count": 20,
+          "spacing": 0.6,
+          "stealth": true
+        },
+        {
+          "enemy": "plated_husk",
+          "count": 10,
+          "spacing": 0.6
+        },
+        {
+          "enemy": "stitcher",
+          "count": 6,
+          "spacing": 0.6
+        }
+      ]
+    },
+    {
+      "wave": 15,
+      "id": "wave_15",
+      "timer": 60,
+      "radio": "Air, splitters, and live cable. Spread your towers out.",
+      "groups": [
+        {
+          "enemy": "carrion_swarm",
+          "count": 16,
+          "spacing": 0.7
+        },
+        {
+          "enemy": "hive_host",
+          "count": 6,
+          "spacing": 0.7
+        },
+        {
+          "enemy": "sparkhead",
+          "count": 6,
+          "spacing": 0.7
+        }
+      ]
+    },
+    {
+      "wave": 16,
+      "id": "wave_16",
+      "timer": 60,
+      "radio": "The plate is hiding now. Thermal, or they'll walk right past.",
+      "groups": [
+        {
+          "enemy": "plated_husk",
+          "count": 20,
+          "spacing": 0.6,
+          "stealth": true
+        },
+        {
+          "enemy": "stitcher",
+          "count": 8,
+          "spacing": 0.6
+        }
+      ]
+    },
+    {
+      "wave": 17,
+      "id": "wave_17",
+      "timer": 60,
+      "radio": "Full sprint. A long lane beats a single chokepoint.",
+      "groups": [
+        {
+          "enemy": "sprinter",
+          "count": 40,
+          "spacing": 0.4
+        },
+        {
+          "enemy": "sparkhead",
+          "count": 8,
+          "spacing": 0.4
+        }
+      ]
+    },
+    {
+      "wave": 18,
+      "id": "wave_18",
+      "timer": 65,
+      "radio": "Hosts are going quiet on the scopes. Find them before they burst.",
+      "groups": [
+        {
+          "enemy": "carrion_swarm",
+          "count": 20,
+          "spacing": 0.6
+        },
+        {
+          "enemy": "hive_host",
+          "count": 10,
+          "spacing": 0.6,
+          "stealth": true
+        },
+        {
+          "enemy": "stitcher",
+          "count": 6,
+          "spacing": 0.6
+        }
+      ]
+    },
+    {
+      "wave": 19,
+      "id": "wave_19",
+      "timer": 75,
+      "radio": "Everything at once. If a lane is blind, that lane leaks.",
+      "groups": [
+        {
+          "enemy": "plated_husk",
+          "count": 25,
+          "spacing": 0.5
+        },
+        {
+          "enemy": "carrion_swarm",
+          "count": 20,
+          "spacing": 0.5,
+          "stealth": true
+        },
+        {
+          "enemy": "sparkhead",
+          "count": 10,
+          "spacing": 0.5
+        },
+        {
+          "enemy": "stitcher",
+          "count": 8,
+          "spacing": 0.5
+        }
+      ]
+    },
+    {
+      "wave": 20,
+      "id": "wave_20",
+      "timer": 70,
+      "radio": "The sky and the fat ones together. Keep the anti-air up.",
+      "groups": [
+        {
+          "enemy": "carrion_swarm",
+          "count": 20,
+          "spacing": 0.6
+        },
+        {
+          "enemy": "hive_host",
+          "count": 12,
+          "spacing": 0.6
+        },
+        {
+          "enemy": "sparkhead",
+          "count": 8,
+          "spacing": 0.6
+        }
+      ]
+    },
+    {
+      "wave": 21,
+      "id": "wave_21",
+      "timer": 70,
+      "radio": "Sparkheads in camo. They'll cook a tower you didn't know was targeted.",
+      "groups": [
+        {
+          "enemy": "plated_husk",
+          "count": 30,
+          "spacing": 0.5
+        },
+        {
+          "enemy": "sparkhead",
+          "count": 10,
+          "spacing": 0.5,
+          "stealth": true
+        }
+      ]
+    },
+    {
+      "wave": 22,
+      "id": "wave_22",
+      "timer": 100,
+      "radio": "Two Gristles. Cheap towers up front, the expensive ones back.",
+      "groups": [
+        {
+          "enemy": "carrion_swarm",
+          "count": 20,
+          "spacing": 1.0
+        },
+        {
+          "enemy": "gristle",
+          "count": 2,
+          "spacing": 1.0
+        }
+      ]
+    },
+    {
+      "wave": 23,
+      "id": "wave_23",
+      "timer": 70,
+      "radio": "A camouflaged rush with medics behind it. Thin them early.",
+      "groups": [
+        {
+          "enemy": "sprinter",
+          "count": 50,
+          "spacing": 0.35,
+          "stealth": true
+        },
+        {
+          "enemy": "stitcher",
+          "count": 10,
+          "spacing": 0.35
+        }
+      ]
+    },
+    {
+      "wave": 24,
+      "id": "wave_24",
+      "timer": 75,
+      "radio": "Hosts, hidden birds, and sparkheads. This is the long fight.",
+      "groups": [
+        {
+          "enemy": "hive_host",
+          "count": 15,
+          "spacing": 0.5
+        },
+        {
+          "enemy": "carrion_swarm",
+          "count": 25,
+          "spacing": 0.5,
+          "stealth": true
+        },
+        {
+          "enemy": "sparkhead",
+          "count": 10,
+          "spacing": 0.5
+        }
+      ]
+    },
+    {
+      "wave": 25,
+      "id": "wave_25",
+      "timer": 75,
+      "radio": "A wall of hidden plate. If your bullets still bounce, you are late.",
+      "groups": [
+        {
+          "enemy": "plated_husk",
+          "count": 40,
+          "spacing": 0.45,
+          "stealth": true
+        },
+        {
+          "enemy": "stitcher",
+          "count": 12,
+          "spacing": 0.45
+        }
+      ]
+    },
+    {
+      "wave": 26,
+      "id": "wave_26",
+      "timer": 75,
+      "radio": "The sky is full and the hosts are walking. Prioritise.",
+      "groups": [
+        {
+          "enemy": "carrion_swarm",
+          "count": 30,
+          "spacing": 0.5,
+          "stealth": true
+        },
+        {
+          "enemy": "hive_host",
+          "count": 20,
+          "spacing": 0.5
+        }
+      ]
+    },
+    {
+      "wave": 27,
+      "id": "wave_27",
+      "timer": 110,
+      "radio": "Three Gristles. Bait them or lose the back line.",
+      "groups": [
+        {
+          "enemy": "plated_husk",
+          "count": 30,
+          "spacing": 0.6
+        },
+        {
+          "enemy": "sparkhead",
+          "count": 10,
+          "spacing": 0.6
+        },
+        {
+          "enemy": "gristle",
+          "count": 3,
+          "spacing": 0.6
+        }
+      ]
+    },
+    {
+      "wave": 28,
+      "id": "wave_28",
+      "timer": 80,
+      "radio": "They are going to flood the road. Length of fire matters more than a single heavy hit.",
+      "groups": [
+        {
+          "enemy": "sprinter",
+          "count": 80,
+          "spacing": 0.3,
+          "stealth": true
+        },
+        {
+          "enemy": "stitcher",
+          "count": 20,
+          "spacing": 0.3
+        },
+        {
+          "enemy": "sparkhead",
+          "count": 20,
+          "spacing": 0.3
+        }
+      ]
+    },
+    {
+      "wave": 29,
+      "id": "wave_29",
+      "timer": 90,
+      "radio": "Last regular wave. If you can't see them, you can't stop them.",
+      "groups": [
+        {
+          "enemy": "plated_husk",
+          "count": 40,
+          "spacing": 0.4,
+          "stealth": true
+        },
+        {
+          "enemy": "carrion_swarm",
+          "count": 30,
+          "spacing": 0.4,
+          "stealth": true
+        },
+        {
+          "enemy": "hive_host",
+          "count": 15,
+          "spacing": 0.4,
+          "stealth": true
+        },
+        {
+          "enemy": "stitcher",
+          "count": 15,
+          "spacing": 0.4
+        }
+      ]
+    }
+  ],
+  "boss_wave": {
+    "id": "boss_wave",
+    "timer": null,
+    "radio": "That's her. Mother Blight. Everything you've got, Halcyon!",
+    "groups": [
+      {
+        "enemy": "plated_husk",
+        "count": 12,
+        "spacing": 0.8
+      },
+      {
+        "enemy": "stitcher",
+        "count": 8,
+        "spacing": 0.8
+      },
+      {
+        "enemy": "sparkhead",
+        "count": 6,
+        "spacing": 0.8
+      },
+      {
+        "enemy": "mother_blight",
+        "count": 1,
+        "spacing": 0.8
+      }
+    ]
+  }
+}
